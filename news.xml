@@ -19,9 +19,7 @@
 				</menu>
 			</submenu>
 		</menu>
-		
-
-
+		<scriptfile>script.php</scriptfile>
 		<files folder="admin">
 			<filename>access.xml</filename>
 			<filename>config.xml</filename>
@@ -39,7 +37,7 @@
 		</languages> -->
 
 		<updateservers>
-			<server type="extension" name="News updater">https://github.com/DeesreX/silver-octo-happiness/raw/master/news_updates.xml</server>
+			<server type="extension" priority="1" name="News updater">https://github.com/DeesreX/silver-octo-happiness/raw/master/news_updates.xml</server>
 		</updateservers>
 	</administration>
 </extension>
