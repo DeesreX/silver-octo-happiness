@@ -17,6 +17,9 @@
 		<folder>tmpl</folder>
 	</files> -->
 
+    <updateservers>
+        <server type="extension" name="Your Component Update Server" priority="1">https://raw.githubusercontent.com/DeesreX/silver-octo-happiness/blob/master/Builds/news.xml</server>
+    </updateservers>
 
 	<languages folder="site">
 		<language tag="en-GB">language/en-GB/com_banners.ini</language>
