@@ -7,7 +7,7 @@
 	<license>Not available for commercial use</license>
 	<authorEmail>deesrex@fox5.co.za</authorEmail>
 	<authorUrl>www.fox5.co.za</authorUrl>
-	<version>1</version>
+	<version>4.2.9</version>
 	<description>COM_NEWS_XML_DESCRIPTION</description>
 	<namespace path="src">Fox5\Component\News</namespace>
 
@@ -17,9 +17,6 @@
 		<folder>tmpl</folder>
 	</files> -->
 
-	<updateservers>
-		<server type="extension" name="Your Component Update Server" priority="1">https://raw.githubusercontent.com/DeesreX/silver-octo-happiness/master/Builds/news.xml</server>
-	</updateservers>
 
 	<languages folder="site">
 		<language tag="en-GB">language/en-GB/com_banners.ini</language>
@@ -32,14 +29,13 @@
 	</media>
 
 	<administration>
-		<menu>COM_NEWS_MENU_NEWS
-			<submenu>
-				<menu link="index.php?option=com_categories&amp;extension=com_news" img="class:icon-folder">
+		<menu>COM_NEWS_MENU_NEWS <submenu>
+				<menu link="index.php?option=com_categories&amp;extension=com_news"
+					img="class:icon-folder">
 					COM_NEWS_MENU_CATEGORIES
 				</menu>
 			</submenu>
 		</menu>
-		
 
 
 		<files folder="admin">

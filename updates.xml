@@ -4,7 +4,7 @@
         <description>Your component description</description>
         <element>com_yourcomponent</element>
         <type>component</type>
-        <version>1.0.4</version>
+        <version>1.0.6</version>
         <client>0</client>
         <infourl title="Your Component Website">https://yourcomponentwebsite.com</infourl>
         <downloads>
