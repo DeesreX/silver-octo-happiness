@@ -7,35 +7,42 @@
 	<license>Not available for commercial use</license>
 	<authorEmail>deesrex@fox5.co.za</authorEmail>
 	<authorUrl>www.fox5.co.za</authorUrl>
-	<version>4.2.9</version>
+	<version>1.2.1</version>
 	<description>COM_NEWS_XML_DESCRIPTION</description>
 	<namespace path="src">Fox5\Component\News</namespace>
 
-	<!-- 
-	<files folder="site">
-		<folder>src</folder>
-		<folder>tmpl</folder>
-	</files> -->
+	<updates>
+		<update>
+			<name>News Component</name>
+			<description>News component description</description>
+			<element>com_news</element>
+			<type>component</type>
+			<version>1.2.2</version>
+			<client>0</client>
+			<infourl title="News Component Website">https://yourcomponentwebsite.com</infourl>
+			<downloads>
+				<downloadurl type="full" format="zip">https://github.com/DeesreX/silver-octo-happiness/raw/master/Builds/com_news-v1.2.2.zip</downloadurl>
+			</downloads>
+			<maintainer>DeesreX</maintainer>
+			<maintainerurl>https://yourwebsite.com</maintainerurl>
+			<targetplatform name="joomla" version="4" />
+		</update>
+	</updates>
 
-
-	<languages folder="site">
-		<language tag="en-GB">language/en-GB/com_banners.ini</language>
-	</languages>
-
-
-	<media destination="com_news" folder="media">
+	<!-- <media destination="com_news" folder="media">
 		<folder>js</folder>
 		<folder>css</folder>
-	</media>
+	</media> -->
 
 	<administration>
-		<menu>COM_NEWS_MENU_NEWS <submenu>
-				<menu link="index.php?option=com_categories&amp;extension=com_news"
-					img="class:icon-folder">
+		<menu>COM_NEWS_MENU_NEWS
+			<submenu>
+				<menu link="index.php?option=com_categories&amp;extension=com_news" img="class:icon-folder">
 					COM_NEWS_MENU_CATEGORIES
 				</menu>
 			</submenu>
 		</menu>
+		
 
 
 		<files folder="admin">
@@ -49,9 +56,13 @@
 			<folder>src</folder>
 			<folder>tmpl</folder>
 		</files>
-		<languages folder="admin">
+		<!-- <languages folder="admin">
 			<language tag="en-GB">language/en-GB/com_news.ini</language>
 			<language tag="en-GB">language/en-GB/com_news.sys.ini</language>
-		</languages>
+		</languages> -->
+
+		<updateservers>
+			<server type="extension" name="News updater">https://github.com/DeesreX/silver-octo-happiness/raw/master/news.xml</server>
+		</updateservers>
 	</administration>
 </extension>
