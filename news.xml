@@ -7,9 +7,15 @@
 	<license>Not available for commercial use</license>
 	<authorEmail>deesrex@fox5.co.za</authorEmail>
 	<authorUrl>www.fox5.co.za</authorUrl>
-	<version>1.2.1</version>
+	<version>1.2.4</version>
 	<description>COM_NEWS_XML_DESCRIPTION</description>
 	<namespace path="src">Fox5\Component\News</namespace>
+
+	<changelogurl>https://update.fox5.co.za/joomla/profile/changelog.xml</changelogurl>
+	<updateservers>
+		<server type="extension" priority="1" name="News updater">https://github.com/DeesreX/silver-octo-happiness/raw/master/news_updates.xml</server>
+	</updateservers>
+	<dlid prefix="dlid=" suffix="" />
 
 	<administration>
 		<menu>COM_NEWS_MENU_NEWS
@@ -35,9 +41,5 @@
 			<language tag="en-GB">language/en-GB/com_news.ini</language>
 			<language tag="en-GB">language/en-GB/com_news.sys.ini</language>
 		</languages> -->
-
-		<updateservers>
-			<server type="extension" priority="1" name="News updater">https://github.com/DeesreX/silver-octo-happiness/raw/master/news_updates.xml</server>
-		</updateservers>
 	</administration>
 </extension>
