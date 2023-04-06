@@ -11,29 +11,6 @@
 	<description>COM_NEWS_XML_DESCRIPTION</description>
 	<namespace path="src">Fox5\Component\News</namespace>
 
-	<updates>
-		<update>
-			<name>News Component</name>
-			<description>News component description</description>
-			<element>com_news</element>
-			<type>component</type>
-			<version>1.2.2</version>
-			<client>0</client>
-			<infourl title="News Component Website">https://yourcomponentwebsite.com</infourl>
-			<downloads>
-				<downloadurl type="full" format="zip">https://github.com/DeesreX/silver-octo-happiness/blob/master/Builds/com_news-v1.2.2.zip</downloadurl>
-			</downloads>
-			<maintainer>DeesreX</maintainer>
-			<maintainerurl>https://yourwebsite.com</maintainerurl>
-			<targetplatform name="joomla" version="4" />
-		</update>
-	</updates>
-
-	<!-- <media destination="com_news" folder="media">
-		<folder>js</folder>
-		<folder>css</folder>
-	</media> -->
-
 	<administration>
 		<menu>COM_NEWS_MENU_NEWS
 			<submenu>
@@ -62,7 +39,7 @@
 		</languages> -->
 
 		<updateservers>
-			<server type="extension" name="News updater">https://github.com/DeesreX/silver-octo-happiness/raw/master/news.xml</server>
+			<server type="extension" name="News updater">https://github.com/DeesreX/silver-octo-happiness/raw/master/news_updates.xml</server>
 		</updateservers>
 	</administration>
 </extension>
