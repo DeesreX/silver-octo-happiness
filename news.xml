@@ -17,9 +17,23 @@
 		<folder>tmpl</folder>
 	</files> -->
 
-	<updateservers>
-		<server type="extension" name="Your Component Update Server" priority="1">https://raw.githubusercontent.com/DeesreX/silver-octo-happiness/master/Builds/news.xml</server>
-	</updateservers>
+	<updates>
+		<update>
+			<name>News Component</name>
+			<description>News component description</description>
+			<element>com_news</element>
+			<type>component</type>
+			<version>1.0.6</version>
+			<client>0</client>
+			<infourl title="News Component Website">https://yourcomponentwebsite.com</infourl>
+			<downloads>
+				<downloadurl type="full" format="zip">https://github.com/DeesreX/silver-octo-happiness/raw/master/Builds/com_news-v1.0.6.zip</downloadurl>
+			</downloads>
+			<maintainer>Your Name</maintainer>
+			<maintainerurl>https://yourwebsite.com</maintainerurl>
+			<targetplatform name="joomla" version="4" />
+		</update>
+	</updates>
 
 	<languages folder="site">
 		<language tag="en-GB">language/en-GB/com_banners.ini</language>
