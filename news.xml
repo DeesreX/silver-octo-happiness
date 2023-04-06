@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+	<name>COM_NEWS</name>
+	<author>DeesreX</author>
+	<creationDate>2023-04-03</creationDate>
+	<copyright>(C) 2023 Fox5</copyright>
+	<license>Not available for commercial use</license>
+	<authorEmail>deesrex@fox5.co.za</authorEmail>
+	<authorUrl>www.fox5.co.za</authorUrl>
+	<version>4.2.9</version>
+	<description>COM_NEWS_XML_DESCRIPTION</description>
+	<namespace path="src">Fox5\Component\News</namespace>
+
+	<!-- 
+	<files folder="site">
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files> -->
+
+
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/com_banners.ini</language>
+	</languages>
+
+
+	<media destination="com_news" folder="media">
+		<folder>js</folder>
+		<folder>css</folder>
+	</media>
+
+	<administration>
+		<menu>COM_NEWS_MENU_NEWS <submenu>
+				<menu link="index.php?option=com_categories&amp;extension=com_news"
+					img="class:icon-folder">
+					COM_NEWS_MENU_CATEGORIES
+				</menu>
+			</submenu>
+		</menu>
+
+
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>news.xml</filename>
+			<filename>config.xml</filename>
+			<folder>forms</folder>
+			<folder>helpers</folder>
+			<folder>services</folder>
+			<folder>sql</folder>
+			<folder>src</folder>
+			<folder>tmpl</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/com_news.ini</language>
+			<language tag="en-GB">language/en-GB/com_news.sys.ini</language>
+		</languages>
+	</administration>
+</extension>
