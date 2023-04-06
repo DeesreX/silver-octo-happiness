@@ -14,5 +14,8 @@
         <maintainer>DeesreX</maintainer>
         <maintainerurl>https://yourwebsite.com</maintainerurl>
         <targetplatform name="joomla" version="4" />
+        <tags>
+            <tag>stable</tag>
+        </tags>
     </update>
 </updates>
