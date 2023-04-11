@@ -1,5 +1,6 @@
 <updates>
     <update>
+        <changelogurl>https://github.com/DeesreX/silver-octo-happiness/raw/master/changelog.xml</changelogurl>
         <name>News Component</name>
         <description>News component description</description>
         <element>com_news</element>
