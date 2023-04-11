@@ -14,7 +14,7 @@
 	<updateservers>
 		<server type="extension" priority="1" name="News updater">https://github.com/DeesreX/silver-octo-happiness/raw/master/admin/news_updates.xml</server>
 	</updateservers>
-	<dlid prefix="dlid=" suffix="&amp;dummy=https://github.com/DeesreX/silver-octo-happiness/releases/download/v1.4.2/com_news-v1.4.2.zip"/>
+	<!-- <dlid prefix="dlid=" suffix="&amp;dummy=https://github.com/DeesreX/silver-octo-happiness/releases/download/v1.4.2/com_news-v1.4.2.zip"/> -->
 
 	<administration>
 		<menu>COM_NEWS_MENU_NEWS
