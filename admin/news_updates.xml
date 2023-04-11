@@ -8,9 +8,11 @@
         <version>1.4.6</version>
         <infourl title="News Component Website">https://rex-topia.com</infourl>
         <downloads>
-            <dlid>23744732</dlid>
-			<downloadurl type="full" format="zip">https://github.com/DeesreX/silver-octo-happiness/blob/master/Builds/com_news-v1.4.2.zip</downloadurl>
+            <!-- <dlid>23744732</dlid> -->
+			<downloadurl type="full" format="zip">https://github.com/DeesreX/silver-octo-happiness/blob/master/Builds/</downloadurl>
         </downloads>
+        <dlib prefix="com_news-v1.4.2.zip" suffix="23744732" />
+
 
 
         <maintainer>DeesreX</maintainer>
