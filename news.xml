@@ -7,10 +7,9 @@
 	<license>Not available for commercial use</license>
 	<authorEmail>deesrex@fox5.co.za</authorEmail>
 	<authorUrl>www.fox5.co.za</authorUrl>
-	<version>1.4.2</version>
+	<version>1.4.4</version>
 	<description>COM_NEWS_XML_DESCRIPTION</description>
 	<namespace path="src">Fox5\Component\News</namespace>
-	<changelogurl>https://github.com/DeesreX/silver-octo-happiness/raw/master/changelog.xml</changelogurl>
 
 	<updateservers>
 		<server type="extension" priority="1" name="News updater">https://github.com/DeesreX/silver-octo-happiness/raw/master/admin/news_updates.xml</server>
