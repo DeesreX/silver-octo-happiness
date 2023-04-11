@@ -10,9 +10,9 @@
 	<version>1.4.2</version>
 	<description>COM_NEWS_XML_DESCRIPTION</description>
 	<namespace path="src">Fox5\Component\News</namespace>
+	<changelogurl>https://github.com/DeesreX/silver-octo-happiness/raw/master/changelog.xml</changelogurl>
 
 	<updateservers>
-		<changelogurl>https://github.com/DeesreX/silver-octo-happiness/raw/master/changelog.xml</changelogurl>
 		<server type="extension" priority="1" name="News updater">https://github.com/DeesreX/silver-octo-happiness/raw/master/admin/news_updates.xml</server>
 	</updateservers>
 
