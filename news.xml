@@ -14,8 +14,8 @@
 	<changelogurl>https://github.com/DeesreX/silver-octo-happiness/raw/master/changelog.xml</changelogurl>
 	<updateservers>
 		<server type="extension" priority="1" name="News updater">https://github.com/DeesreX/silver-octo-happiness/raw/master/admin/news_updates.xml</server>
+		<dlid prefix="dlid=23744732" suffix="" />
 	</updateservers>
-	<dlid prefix="dlid={23744732}" suffix="" />
 
 	<administration>
 		<menu>COM_NEWS_MENU_NEWS
