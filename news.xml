@@ -13,7 +13,7 @@
 
 	<changelogurl>https://update.fox5.co.za/joomla/profile/changelog.xml</changelogurl>
 	<updateservers>
-		<server type="extension" priority="1" name="News updater">https://github.com/DeesreX/silver-octo-happiness/raw/master/admin/news_updates.xml</server>
+		<server type="extension" priority="1" name="News updater">https://github.com/DeesreX/silver-octo-happiness/raw/master/news_updates.xml</server>
 	</updateservers>
 	<dlid prefix="23744732" suffix="" />
 
