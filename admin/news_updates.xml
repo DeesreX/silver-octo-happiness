@@ -5,7 +5,7 @@
         <description>News component description</description>
         <element>com_news</element>
         <type>component</type>
-        <version>1.4.4</version>
+        <version>1.4.6</version>
         <infourl title="News Component Website">https://yourcomponentwebsite.com</infourl>
         <downloads>
 			<downloadurl dlid="23744732" type="full" format="zip">https://github.com/DeesreX/silver-octo-happiness/releases/download/v1.4.2/com_news-v1.4.2.zip</downloadurl>
