@@ -14,7 +14,7 @@
 	<updateservers>
 		<server type="extension" priority="1" name="News updater">https://github.com/DeesreX/silver-octo-happiness/raw/master/admin/news_updates.xml</server>
 	</updateservers>
-	<dlid prefix="23744732" suffix="" />
+	<dlid/>
 
 	<administration>
 		<menu>COM_NEWS_MENU_NEWS
