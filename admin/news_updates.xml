@@ -11,7 +11,7 @@
             <!-- <dlid>23744732</dlid> -->
 			<downloadurl type="full" format="zip">https://github.com/DeesreX/silver-octo-happiness/blob/master/Builds/</downloadurl>
         </downloads>
-        <dlib prefix="com_news-v1.4.2.zip" suffix="23744732" />
+        <dlib  suffix="com_news-v1.4.2.zip" />
 
 
 
