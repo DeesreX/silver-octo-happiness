@@ -8,11 +8,11 @@
         <infourl title="News Component Website">https://yourcomponentwebsite.com</infourl>
         <downloads>
             <downloadurl type="full" format="zip">
-                https://github.com/DeesreX/silver-octo-happiness/releases/download/v1.4.2/com_news-v1.4.2.zip
-            </downloadurl>
+                https://github.com/DeesreX/silver-octo-happiness/releases/download/v1.4.2/com_news-v1.4.2.zip?dlid={dlid}</downloadurl>
+
         </downloads>
-        
-        
+
+
         <maintainer>DeesreX</maintainer>
         <maintainerurl>https://yourwebsite.com</maintainerurl>
         <targetplatform name="joomla" version="4" />
