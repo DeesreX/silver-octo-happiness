@@ -13,26 +13,9 @@
 
 	<changelogurl>https://github.com/DeesreX/silver-octo-happiness/raw/master/changelog.xml</changelogurl>
 	<updateservers>
-		<server type="extension" priority="1" name="News updater">
-			https://github.com/DeesreX/silver-octo-happiness/raw/master/admin/news_updates.xml
-			<update>
-				<url>https://example.com/updates.xml</url>
-				<infourl>https://example.com/info.html</infourl>
-				<message>COM_NEWS_UPDATE_MESSAGE</message>
-				<element>com_news</element>
-				<type>component</type>
-				<client>site</client>
-				<platform>3.8.0</platform>
-				<params>
-					<param name="myparam" type="text" default="1" label="COM_NEWS_MY_PARAM_LABEL"/>
-				</params>
-				<tags>
-					<tag>stable</tag>
-				</tags>
-			</update>
-		</server>
-		<dlid prefix="dlid=23744732" suffix="" />
+		<server type="extension" priority="1" name="News updater">https://github.com/DeesreX/silver-octo-happiness/raw/master/admin/news_updates.xml</server>
 	</updateservers>
+	<dlid prefix="dlid=23744732" suffix="" />
 
 	<administration>
 		<menu>COM_NEWS_MENU_NEWS
