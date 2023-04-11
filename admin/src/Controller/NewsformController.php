@@ -15,7 +15,7 @@ class NewsformController extends FormController
 
     public function save($key = null, $urlVar = null)
     {
-        die("Saving")
+        die("Saving");
     }
     
 }
