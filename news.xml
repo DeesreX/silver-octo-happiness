@@ -41,5 +41,5 @@
 			<language tag="en-GB">language/en-GB/com_news.sys.ini</language>
 		</languages> -->
 	</administration>
-	<dlid prefix="?dlid=" suffix="" />
+	<dlid prefix="dlid=" suffix="" />
 </extension>
