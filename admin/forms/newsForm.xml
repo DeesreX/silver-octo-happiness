@@ -1,5 +1,5 @@
 <form
-    action="index.php?option=com_news&amp;task=newsform.save"
+    action="index.php?option=com_news&amp;task=newscontroller.save"
     method="post"
     name="adminForm"
     id="adminForm"
@@ -22,63 +22,38 @@
             rows="4"
         />
         <field
-            name="text"
-            type="textarea"
-            label="Text"
-            description=""
-            class="form-control"
-            rows="10"
-            required="true"
-        />
-        <field
             name="author_id"
-            type="list"
+            type="user"
             label="Author"
             description=""
             class="form-control"
             required="true"
-        >
-            <option value=""></option>
-            <options />
-        </field>
+        />
         <field
-            name="category_id"
-            type="list"
-            label="Category"
+            name="date"
+            type="calendar"
+            label="Date"
             description=""
             class="form-control"
             required="true"
-        >
-            <option value=""></option>
-            <options />
-        </field>
+        />
         <field
-            name="date"
+            name="publish_date"
             type="calendar"
             label="Publish Date"
             description=""
             class="form-control"
             required="true"
         />
-        <field
-            name="image"
-            type="media"
-            label="Image"
-            description=""
-            directory="news"
-            required="false"
-            preview_height="200"
-            preview_width="200"
-            accept="image/*"
-        />
     </fieldset>
+
 
     <fieldset name="status_form">
         <field name="status" type="list" default="1" label="Status">
             <option value="1">Published</option>
             <option value="0">Unpublished</option>
         </field>
-        <field name="category" type="category" label="Category" required="true"
+        <field name="catid" type="category" label="Category" required="true"
             extension="com_news" />
         <field name="featured" type="list" default="0" label="Featured">
             <option value="0">No</option>
@@ -89,6 +64,9 @@
         <field name="note" type="textarea" label="Note" />
         <field name="version_note" type="textarea" label="Version Note" />
     </fieldset>
+</form>
+
+<!-- 
 
     <fieldset name="intro_images">
         <field name="intro_image" type="media" label="Intro Image"
@@ -140,11 +118,12 @@
         </field>
         <field
             name="catid"
-            type="categoryedit"
-            label="JCATEGORY"
+            type="category"
+            extension="com_news"
+            label="Category"
             addfieldprefix="Joomla\Component\Categories\Administrator\Field"
             required="true"
-            default=""
+            default="CATEGORY_ID_HERE"
         />
         <field
             name="featured"
@@ -361,7 +340,7 @@
         </field>
     </fieldset>
 
-    <fieldset name="category" label="JCATEGORY">
+    <fieldset name="category" label="Category">
         <field
             name="show_category"
             type="list"
@@ -694,6 +673,10 @@
             description="The name of the author of the content"
         />
         <field
+            name="author_id"
+            type="hidden"
+        />
+        <field
             name="content_rights"
             type="textarea"
             label="Content Rights"
@@ -703,7 +686,8 @@
         />
     </fieldset>
 
-    <fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+    <fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL"
+        description="JCONFIG_PERMISSIONS_DESC">
         <field
             name="rules"
             type="rules"
@@ -714,6 +698,6 @@
         />
     </fieldset>
 
-    <input type="hidden" name="task" value="NewsFormController" />
+    <input type="hidden" name="task" value="controller" />
     <?php echo JHtml::_('form.token');?>
-</form>
+</form> -->

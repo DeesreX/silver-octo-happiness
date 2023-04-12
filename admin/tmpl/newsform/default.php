@@ -52,8 +52,8 @@ $document->addScriptDeclaration('
 ');
 ?>
 
-<form action="<?php echo 'index.php?option=com_news' ?>" method="post" name="adminForm" id="adminForm"
-    class="form-validate">
+<form action="<?php echo 'index.php?option=com_news&controller=news&task=save' ?>" method="post" name="adminForm"
+    id="adminForm" class="form-validate">
     <div class="row">
         <div class="col-md-12">
             <div class="card">
@@ -61,15 +61,28 @@ $document->addScriptDeclaration('
                     <?php echo HTMLHelper::_('uitab.startTabSet', 'myTab', array('active' => 'content')); ?>
 
                     <?php echo HTMLHelper::_('uitab.addTab', 'myTab', 'content', Text::_('Content', true)); ?>
+
                     <div class="row">
-                        <div class="col-md-9">
+                        <div class="col-md-12">
                             <label>News Content</label>
                             <?php echo $editor->display('mytextarea', $text, '100%', '600px', '20', '10', true, null, $config); ?>
                         </div>
-                        <div class="col-md-3">
-                            <?php echo LayoutHelper::render('joomla.edit.global', $this); ?>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Basic Info</label>
+                            <?php echo $this->form->renderFieldset('news_details') ?>
+                        </div>
+                        <div class="col-md-6">
+                        <label>Publishing</label>
+                            <?php echo $this->form->renderFieldset('status_form') ?>
+
                         </div>
                     </div>
+
                     <?php echo HTMLHelper::_('uitab.endTab'); ?>
 
                     <?php echo HTMLHelper::_('uitab.addTab', 'myTab', 'images_links', Text::_('Images and Links', true)); ?>
@@ -154,7 +167,6 @@ $document->addScriptDeclaration('
         </div>
     </div>
 
-
-    <input type="hidden" name="task" value="" />
+    <input type="hidden" name="task" value="news" />
     <?php echo JHtml::_('form.token'); ?>
 </form>

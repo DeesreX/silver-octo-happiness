@@ -2,24 +2,74 @@
 
 namespace Fox5\Component\News\Administrator\Model;
 
+use Fox5\Component\News\Administrator\Table\NewsTable;
 use Joomla\CMS\Form\Form;
 use Joomla\CMS\MVC\Model\FormModel;
+use Joomla\Database\DatabaseAwareTrait;
+use Joomla\Database\DatabaseDriver;
+use Joomla\Database\DatabaseInterface;
+use Joomla\DI\Container;
+use Joomla\Input\Input;
+use Lcobucci\JWT\Claim\Factory;
+use mysqli;
 
 class NewsFormModel extends FormModel
 {
+    private $comDbo = null;
+
+    public function __construct()
+    {
+        $this->_db = $this->setComDb();
+    }
+
+
     protected $item;
+
+    public function setComDb()
+    {
+        $container = new Container;
+
+        $options = array();
+        $options['database'] = 'news';
+        $options['user'] = 'dev';
+        $options['password'] = '112233445566';
+
+        return DatabaseDriver::getInstance($options);
+    }
 
     public function getForm($data = array(), $loadData = true)
     {
         // Get the form object.
         $form = $this->loadForm('com_news.newsform', 'newsform', array('control' => 'jform', 'load_data' => $loadData));
 
-        if (!$form)
-        {
+        if (!$form) {
             return false;
         }
 
         // Return the form object.
         return $form;
+    }
+
+    public function saveForm($data)
+    {
+        $input = new Input();
+        $db = $this->_db;
+        $newsTable = new NewsTable($db);
+        $editorText = $input->getPost('mytextarea', '', 'raw');
+        $data['text'] = $editorText;
+
+        if(isset($data['catid'])){ $data['category_id'] = $data['catid'];}
+        if(isset($data['status'])) { $data['publish'] = $data['status'];}
+
+        if(!$newsTable->save($data)){
+            die(print_r($newsTable->getErrors()));
+        }
+
+    }
+
+    public function getData(){
+        $table = new NewsTable($this->_db);
+        $table->load();
+        return $table->getItems();
     }
 }

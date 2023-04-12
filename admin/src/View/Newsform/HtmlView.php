@@ -2,6 +2,7 @@
 
 
 namespace Fox5\Component\News\Administrator\View\Newsform;
+use Fox5\Component\News\Administrator\Controller\NewsController;
 defined('_JEXEC') or die;
 
 use Exception;
@@ -42,7 +43,8 @@ class HtmlView extends BaseHtmlView {
         // Add the title to the toolbar
         ToolbarHelper::title('Add News Article');
 
-        ToolbarHelper::save('newsformcontroller.save');
+        
+        ToolbarHelper::save();
         ToolbarHelper::cancel('newsform.cancel');
     }
 }
