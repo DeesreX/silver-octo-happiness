@@ -33,6 +33,7 @@
 		<files folder="admin">
 			<filename>access.xml</filename>
 			<filename>config.xml</filename>
+			<filename>news_updates.xml</filename>
 			<folder>forms</folder>
 			<folder>helpers</folder>
 			<folder>services</folder>
