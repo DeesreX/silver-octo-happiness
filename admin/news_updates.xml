@@ -4,11 +4,11 @@
         <description>News component installation</description>
         <element>com_news</element>
         <type>component</type>
-        <version>1.6.0</version>
+        <version>1.6.0.1</version>
         <downloads>
             <downloadurl type="full" format="zip">
                 https://github.com/DeesreX/silver-octo-happiness/raw/master/Builds/com_news-v1.5.2.zip
-                <sha256>8005ccb7d7a9a32ef9dad4d7b451e3e6232914a559d3bbb3d5fab66ea409f0ec</sha256>
+                <sha256>92128c7fc22f3f685e9914450a0bd855e258aafff9351663260b080a4a7c5188</sha256>
             </downloadurl>
         </downloads>
         <maintainer>DeesreX</maintainer>
@@ -17,8 +17,8 @@
         <tags>
             <tag>stable</tag>
         </tags>
-        <changelog>https://github.com/DeesreX/silver-octo-happiness/raw/master/CHANGELOG.md</changelog>
-
+        <changelog>https://github.com/DeesreX/silver-octo-happiness/raw/master/CHANGELOG.md
+        </changelog>
     </update>
 
 
