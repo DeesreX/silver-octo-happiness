@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" method="upgrade">
 	<name>COM_NEWS</name>
-	<author>DeesreX</author>
+	<author>DeesreX</author>	
 	<creationDate>2023-04-03</creationDate>
 	<copyright>(C) 2023 Fox5</copyright>
 	<license>Not available for commercial use</license>
 	<authorEmail>deesrex@fox5.co.za</authorEmail>
 	<authorUrl>www.fox5.co.za</authorUrl>
-	<version>1.6.2</version>
+	<version>1.5.2</version>
 	<description>COM_NEWS_XML_DESCRIPTION</description>
 	<namespace path="src">Fox5\Component\News</namespace>
 
 	<updateservers>
-		<server type="extension" priority="1" name="News updater">https://github.com/DeesreX/silver-octo-happiness/raw/master/news_updates.xml</server>
+		<server type="extension" priority="1" name="News updater">https://github.com/DeesreX/silver-octo-happiness/raw/master/admin/news_updates.xml</server>
 	</updateservers>
+	<dlid prefix="dlid=" suffix="&amp;dummy=my.zip" />
+
+	<files folder='site'>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
 
 	<administration>
 		<menu>COM_NEWS_MENU_NEWS
@@ -27,7 +33,6 @@
 		<files folder="admin">
 			<filename>access.xml</filename>
 			<filename>config.xml</filename>
-			<filename>news_updates.xml</filename>
 			<folder>forms</folder>
 			<folder>helpers</folder>
 			<folder>services</folder>
@@ -40,6 +45,4 @@
 			<language tag="en-GB">language/en-GB/com_news.sys.ini</language>
 		</languages> -->
 	</administration>
-
-
 </extension>
