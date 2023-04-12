@@ -16,4 +16,18 @@
             <tag>stable</tag>
         </tags>
     </update>
+    <changelog>
+        <changes>
+            <version>1.5.8</version>
+            <releasedate>2023-04-11</releasedate>
+            <description><![CDATA[Initial release with updateability]]></description>
+            <log><![CDATA[
+                <ul>
+                    <li>Changes</li>
+                    <li>Nothing much</li>
+                </ul>
+            ]]></log>
+        </changes>
+    </changelog>
+    
 </updates>
