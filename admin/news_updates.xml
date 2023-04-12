@@ -1,11 +1,10 @@
 <updates>
     <update>
         <name>News Component</name>
-        <description>News component description</description>
+        <description>News component installation</description>
         <element>com_news</element>
         <type>component</type>
         <version>1.5.5</version>
-        <infourl title="News Component Website">https://yourcomponentwebsite.com</infourl>
         <downloads>
             <downloadurl type="full" format="zip">
                https://github.com/DeesreX/silver-octo-happiness/blob/master/Builds/com_news-v1.5.2.zip</downloadurl>

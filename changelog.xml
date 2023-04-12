@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelog>
 	<changes>
-		<version>1.4.6</version>
+		<version>1.5.5</version>
 		<releasedate>2023-04-11</releasedate>
 		<description><![CDATA[Initial release with updateability]]></description>
 		<log><![CDATA[
