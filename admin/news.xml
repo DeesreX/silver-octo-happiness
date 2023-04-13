@@ -16,10 +16,10 @@
 	</updateservers>
 	<dlid prefix="dlid="/>
 
-	<!-- <files folder='site'>
+	<files folder='site'>
 		<folder>src</folder>
 		<folder>tmpl</folder>
-	</files> -->
+	</files>
 
 	<administration>
 		<menu>COM_NEWS_MENU_NEWS
