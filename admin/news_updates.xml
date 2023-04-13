@@ -7,8 +7,8 @@
         <version>1.6.7</version>
         <downloads>
             <downloadurl type="full" format="zip">
-                https://github.com/DeesreX/silver-octo-happiness/raw/master/Builds/com_news-v1.6.7.zip
-                <sha256>D896402CC25510C841AD26BD4667A836DF72A3276A742D1AE004BB6AE29959E9</sha256>
+                https://github.com/DeesreX/silver-octo-happiness/raw/master/Builds/com_news-v1.6.7.1.zip
+                <sha256>78181A5D8ECD646553D5423A10C6DD8211A631CD2E0D634C111831D7EE5FC050</sha256>
             </downloadurl>
         </downloads>
         <maintainer>DeesreX</maintainer>
