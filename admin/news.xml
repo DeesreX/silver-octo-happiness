@@ -7,7 +7,7 @@
 	<license>Not available for commercial use</license>
 	<authorEmail>deesrex@fox5.co.za</authorEmail>
 	<authorUrl>www.fox5.co.za</authorUrl>
-	<version>1.6.7</version>
+	<version>1.6.7.1</version>
 	<description>COM_NEWS_XML_DESCRIPTION</description>
 	<namespace path="src">Fox5\Component\News</namespace>
 
