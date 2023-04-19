@@ -5,34 +5,11 @@ namespace Fox5\Component\News\Administrator\Model;
 use Fox5\Component\News\Administrator\Table\NewschangelogTable;
 use Fox5\Component\News\Administrator\Table\NewsTable;
 use Joomla\CMS\MVC\Model\FormModel;
-use Joomla\Database\DatabaseDriver;
-use Joomla\DI\Container;
 use Joomla\Input\Input;
-use Lcobucci\JWT\Claim\Factory;
+use Joomla\CMS\Factory;
 
 class NewsFormModel extends FormModel
 {
-    private $comDbo = null;
-
-    public function __construct()
-    {
-        $this->_db = $this->setComDb();
-    }
-
-
-    protected $item;
-
-    public function setComDb()
-    {
-        $container = new Container;
-
-        $options = array();
-        $options['database'] = 'news';
-        $options['user'] = 'dev';
-        $options['password'] = '112233445566';
-
-        return DatabaseDriver::getInstance($options);
-    }
 
     public function getForm($data = array(), $loadData = true)
     {
@@ -50,11 +27,12 @@ class NewsFormModel extends FormModel
     public function saveForm($data)
     {
         $input = new Input();
-        $db = $this->_db;
+        $db = Factory::getDbo();
         $newsTable = new NewsTable($db);
         $newsChangelogTable = new NewschangelogTable($db);
         $editorText = $input->getPost('mytextarea', '', 'raw');
         $data['text'] = $editorText;
+        
 
         if (isset($data['catid'])) {
             $data['category_id'] = $data['catid'];
@@ -82,6 +60,8 @@ class NewsFormModel extends FormModel
                 'new_text' => $data['text'],
                 'edit_date' => Factory::getDate()->toSql()
             );
+        } else {
+            
         }
 
         if (!$newsTable->save($data)) {

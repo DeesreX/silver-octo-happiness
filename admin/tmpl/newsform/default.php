@@ -5,7 +5,6 @@ use Joomla\CMS\Factory;
 use Joomla\CMS\Language\Text;
 use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Editor\Editor;
-use Joomla\CMS\Layout\LayoutHelper;
 use Joomla\CMS\Form\Form;
 
 $editor = Editor::getInstance('codemirror');

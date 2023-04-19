@@ -15,6 +15,8 @@ use Joomla\CMS\MVC\Factory\MVCFactoryInterface;
 use Fox5\Component\News\Administrator\Extension\NewsComponent;
 use Joomla\DI\Container;
 use Joomla\DI\ServiceProviderInterface;
+use Joomla\CMS\Extension\Service\Provider\Category;
+
 
 return new class implements ServiceProviderInterface
 {
@@ -22,10 +24,11 @@ return new class implements ServiceProviderInterface
     {
         $namespace = '\\Fox5\\Component\\News';
 
-        $container->registerServiceProvider(new CategoryFactory($namespace));
+        // $container->registerServiceProvider(new CategoryFactory($namespace));
         $container->registerServiceProvider(new MVCFactory($namespace));
         $container->registerServiceProvider(new ComponentDispatcherFactory($namespace));
         $container->registerServiceProvider(new RouterFactory($namespace));
+
 
         $container->set(
             ComponentInterface::class,
@@ -34,7 +37,7 @@ return new class implements ServiceProviderInterface
 
                 $component->setRegistry($container->get(Registry::class));
                 $component->setMVCFactory($container->get(MVCFactoryInterface::class));
-                $component->setCategoryFactory($container->get(CategoryFactoryInterface::class));
+                // $component->setCategoryFactory($container->get(CategoryFactoryInterface::class));
                 $component->setRouterFactory($container->get(RouterFactoryInterface::class));
 
                 return $component;

@@ -10,7 +10,7 @@ class NewsTable extends Table
 {
     public function __construct(DatabaseDriver $db)
     {
-        parent::__construct('news', 'id', $db);
+        parent::__construct('#__news', 'id', $db);
     }
 
     public function getItems()

@@ -42,8 +42,6 @@ class HtmlView extends BaseHtmlView {
     {
         // Add the title to the toolbar
         ToolbarHelper::title('Add News Article');
-
-        
         ToolbarHelper::save();
         ToolbarHelper::cancel('newsform.cancel');
     }

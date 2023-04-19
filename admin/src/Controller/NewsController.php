@@ -2,11 +2,15 @@
 namespace Fox5\Component\News\Administrator\Controller;
 
 use Fox5\Component\News\Administrator\Model\NewsFormModel;
+use Joomla\CMS\Categories\CategoryServiceTrait;
+use Joomla\CMS\Factory;
 use Joomla\CMS\MVC\Controller\FormController;
 use Joomla\Input\Input;
 
 class NewsController extends FormController
 {
+    use CategoryServiceTrait;
+
     protected $view_item = 'edit'; // Set the edit view as the default view for this controller.
     public function execute($task)
     {
@@ -32,5 +36,10 @@ class NewsController extends FormController
         }
 
     }
+
+    // public function edit()
+    // {
+
+    // }
 
 }

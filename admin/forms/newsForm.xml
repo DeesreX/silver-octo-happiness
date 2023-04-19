@@ -49,19 +49,20 @@
 
 
     <fieldset name="status_form">
-        <field name="status" type="list" default="1" label="Status">
+        <field name="state" type="list" default="1" label="Status">
             <option value="1">Published</option>
             <option value="0">Unpublished</option>
         </field>
-        <field name="catid" type="category" label="Category" required="true"
-            extension="com_news" />
-        <field name="featured" type="list" default="0" label="Featured">
-            <option value="0">No</option>
-            <option value="1">Yes</option>
-        </field>
-        <field name="access" type="access" label="Access" required="true" />
+        <field name="catid" type="Category" label="Category" required="true" extension="com_news" />
+        <field name="access" type="accesslevel" label="Access" required="true" />
         <field name="tags" type="tags" label="Tags" />
         <field name="note" type="textarea" label="Note" />
         <field name="version_note" type="textarea" label="Version Note" />
+        <field name="hit" />
     </fieldset>
+
+    <fieldset name="intro_images">
+        <field name="intro_image" type="media" />
+    </fieldset>
+    
 </form>

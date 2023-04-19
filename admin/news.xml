@@ -1,41 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" method="upgrade">
 	<name>COM_NEWS</name>
-	<author>DeesreX</author>	
+	<author>DeesreX</author>
 	<creationDate>2023-04-03</creationDate>
 	<copyright>(C) 2023 Fox5</copyright>
 	<license>Not available for commercial use</license>
 	<authorEmail>deesrex@fox5.co.za</authorEmail>
 	<authorUrl>www.fox5.co.za</authorUrl>
-	<version>1.6.7.2</version>
+	<version>1.6.8</version>
 	<description>COM_NEWS_XML_DESCRIPTION</description>
 	<namespace path="src">Fox5\Component\News</namespace>
 
 	<updateservers>
-		<server type="extension" priority="1" name="News updater">https://github.com/DeesreX/silver-octo-happiness/raw/master/admin/news_updates.xml</server>
+		<server type="extension" priority="1" name="News updater">
+			https://github.com/DeesreX/silver-octo-happiness/raw/master/news_updates.xml</server>
 	</updateservers>
-	<dlid prefix="dlid="/>
+	<dlid prefix="dlid=" />
 
-	<files folder='site'>
+	<!-- <files folder='site'>
 		<folder>src</folder>
 		<folder>tmpl</folder>
-	</files>
+	</files> -->
 
 	<administration>
-		<menu>COM_NEWS_MENU_NEWS
-			<submenu>
-				<menu link="index.php?option=com_categories&amp;extension=com_news" img="class:icon-folder">
-					COM_NEWS_MENU_CATEGORIES
-				</menu>
-			</submenu>
-		</menu>
+		<menu>COM_NEWS_MENU_TITLE</menu>
+		<submenu>
+			<menu link="option=com_news" view="newsform">
+				COM_MENU_ADD_NEWS_ARTICLE
+			</menu>
+			<menu link="option=com_categories&amp;extension=com_news" view='categories'>
+				COM_NEWS_CATEGORIES
+			</menu>
+			<menu link="option=com_news&amp;view=newslist">
+				COM_NEWS_LIST
+			</menu>
+		</submenu>
 		<scriptfile>script.php</scriptfile>
 		<files folder="admin">
 			<filename>access.xml</filename>
 			<filename>config.xml</filename>
 			<filename>news_updates.xml</filename>
+			<filename>news.xml</filename>
 			<folder>forms</folder>
-			<folder>helpers</folder>
 			<folder>services</folder>
 			<folder>sql</folder>
 			<folder>src</folder>

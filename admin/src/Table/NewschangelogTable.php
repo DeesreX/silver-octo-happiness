@@ -10,7 +10,7 @@ class NewschangelogTable extends Table
 {
     public function __construct(DatabaseDriver $db)
     {
-        parent::__construct('news_changelog', 'id', $db);
+        parent::__construct('#__news_changelog', 'id', $db);
     }
 
 

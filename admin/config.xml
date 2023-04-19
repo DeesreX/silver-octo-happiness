@@ -525,7 +525,7 @@
 		/>
 	</fieldset>
 
-	<fieldset
+	<!-- <fieldset
 		name="category"
 		label="JCATEGORY"
 		description="These settings apply for News Category Options unless they are changed by the individual category or menu settings."
@@ -722,7 +722,7 @@
 			<option value="0">JHIDE</option>
 			<option value="1">JSHOW</option>
 		</field>
-	</fieldset>
+	</fieldset> -->
 
 	<fieldset
 		name="blog_default_parameters"
